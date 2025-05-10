@@ -1,5 +1,5 @@
 n = int(input())
-for i in range(n):
+for _ in range(n):
     word = str(input())
     word_size = len(word)
     if word_size > 10:
