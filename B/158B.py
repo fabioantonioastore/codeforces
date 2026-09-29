@@ -28,7 +28,7 @@ if two_group:
 if three_group:
     total += three_group
 if one_group:
-    total += (one_group // 4)
+    total += one_group // 4
     if one_group % 4:
         total += 1
 

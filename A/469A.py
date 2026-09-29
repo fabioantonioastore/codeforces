@@ -1,5 +1,5 @@
 n = int(input())
-p_indices = [int(i) for i in  str(input()).split(" ")]
+p_indices = [int(i) for i in str(input()).split(" ")]
 q_indices = [int(i) for i in str(input()).split(" ")]
 
 p_q_set = set(p_indices[1::])

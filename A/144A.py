@@ -27,7 +27,10 @@ max_soldier = soldiers[max_index]
 seconds = 0
 
 while soldiers[0] != max_soldier:
-    (soldiers[max_index], soldiers[max_index - 1]) = (soldiers[max_index - 1], soldiers[max_index])
+    soldiers[max_index], soldiers[max_index - 1] = (
+        soldiers[max_index - 1],
+        soldiers[max_index],
+    )
     max_index -= 1
     seconds += 1
 
@@ -35,7 +38,10 @@ min_index = get_min_soldier_index()
 min_soldier = soldiers[min_index]
 
 while soldiers[-1] != min_soldier:
-    (soldiers[min_index], soldiers[min_index + 1]) = (soldiers[min_index + 1], soldiers[min_index])
+    soldiers[min_index], soldiers[min_index + 1] = (
+        soldiers[min_index + 1],
+        soldiers[min_index],
+    )
     min_index += 1
     seconds += 1
 

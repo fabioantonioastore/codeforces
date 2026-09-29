@@ -12,6 +12,7 @@ def get_one_position() -> tuple:
                 return (i + 1, j + 1)
     raise "There is no 1"
 
+
 matrix_position = get_one_position()
 total_moves = abs(3 - matrix_position[0]) + abs(3 - matrix_position[1])
 print(total_moves)

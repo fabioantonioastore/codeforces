@@ -1,7 +1,7 @@
 from typing import Generator
 
-
 number = int(input())
+
 
 def is_lucky_number(n: int) -> bool:
     n_set = set(str(n))

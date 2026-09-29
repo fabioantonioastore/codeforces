@@ -10,7 +10,6 @@ class Dragon:
         self.bonus = y
 
 
-
 def get_min_dragon(dragons: list[Dragon]) -> Dragon:
     min_dragon = dragons[0]
     for i in range(1, len(dragons)):

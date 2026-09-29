@@ -10,7 +10,7 @@ for t in range(times):
         if next_i > n - 1:
             break
         if queue[i] == "B" and queue[next_i] == "G":
-            (queue[i], queue[next_i]) = (queue[next_i], queue[i])
+            queue[i], queue[next_i] = (queue[next_i], queue[i])
             i += 2
             next_i += 2
         else:

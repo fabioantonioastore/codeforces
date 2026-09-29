@@ -6,8 +6,8 @@ for _ in range(t):
     digits = 1
     k = 1
     number = ""
-    while n // (10 ** digits) > 0:
-        rest = n % (10 ** digits)
+    while n // (10**digits) > 0:
+        rest = n % (10**digits)
         digits += 1
         n -= rest
         if rest != 0:

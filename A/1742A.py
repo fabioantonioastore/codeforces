@@ -6,11 +6,7 @@ for _ in range(t):
     b = numbers[1]
     c = numbers[2]
 
-    if (
-        a + b == c or
-        a + c == b or
-        c + b == a
-    ):
+    if a + b == c or a + c == b or c + b == a:
         print("YES")
         continue
     print("NO")
